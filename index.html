@@ -2,72 +2,6 @@
 <html>
 <head>
     <title>I Owe You an Apology 🤍</title>
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            background-color: #ffe6f0;
-            padding: 50px;
-        }
-
-        button {
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            border-radius: 10px;
-            border: none;
-            cursor: pointer;
-        }
-
-        #message {
-            margin-top: 30px;
-            font-size: 18px;
-            color: #333;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1>Click the reason 🤍</h1>
-
-    <button onclick="showMessage(1)">intro</button>
-    <button onclick="showMessage(2)">disclaimer</button>
-    <button onclick="showMessage(3)">epilogue</button>
-
-    <div id="message"></div>
-
-    <script>
-        function showMessage(option) {
-            var text = "";
-
-            if(option == 1) {
-                text = "HEHE!!!!!! I hope u know wht this for.... I behaved like that not because you deserved it, Not because you did anything wrong!!!
-But because I let my mood swings run the show, period hits hard  u know!!!";
-            }
-            else if(option == 2) {
-                text = "I know you probably won’t take this seriously…
-and maybe I deserve that.
-But even if this looks dramatic or silly, what I’m saying is real.... ";
-            }
-            else if(option == 3) {
-                text = "arinjo ariyathaeyoo i dont want any stains in our bondss... i know this sounds or dramatic but i would choose this rather than being silent or being afraid eni ne ennode normal samsarikille, will u not love me like before and other worst scenarios!!!! so please be NORMAL pleaseeeee... please forgive this overdramatic idiot your AMUL BABY pleaseeee";
-            }
-
-            document.getElementById("message").innerHTML = text;
-        }
-    </script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>I Owe You an Apology 🤍</title>
 
     <style>
         body {
@@ -119,7 +53,6 @@ But even if this looks dramatic or silly, what I’m saying is real.... ";
             opacity: 1;
         }
 
-        /* Floating hearts */
         .heart {
             position: absolute;
             color: #ff4da6;
@@ -131,7 +64,6 @@ But even if this looks dramatic or silly, what I’m saying is real.... ";
             0% { transform: translateY(100vh); opacity: 1; }
             100% { transform: translateY(-10vh); opacity: 0; }
         }
-
     </style>
 </head>
 
@@ -150,16 +82,13 @@ But even if this looks dramatic or silly, what I’m saying is real.... ";
             var text = "";
 
             if(option == 1) {
-                text = "HEHE!!!!!! I hope u know wht this for.... I behaved like that not because you deserved it, Not because you did anything wrong!!!
-But because I let my mood swings run the show, period hits hard  u know!!!";
+                text = "HEHE!!!!!! I hope u know wht this for.... I behaved like that not because you deserved it, Not because you did anything wrong!!!<br><br>But because I let my mood swings run the show, period hits hard  u know!!!";
             }
             else if(option == 2) {
-                text = "I know you probably won’t take this seriously…
-and maybe I deserve that.
-But even if this looks dramatic or silly, what I’m saying is real.... ";
+                text = "I know you probably won’t take this seriously…<br><br>and maybe I deserve that.<br><br>But even if this looks dramatic or silly, what I’m saying is real.... ";
             }
             else if(option == 3) {
-                text = "arinjo ariyathaeyoo i dont want any stains in our bondss... i know this sounds dramatic but i would choose this rather than being silent or being afraid eni ne ennode normal samsarikille, will u not love me like before and other worst scenarios!!!! so please be NORMAL pleaseeeee... please forgive this overdramatic idiot your AMUL BABY pleaseeee";
+                text = "arinjo ariyathaeyoo i dont want any stains in our bondss... i know this sounds dramatic but i would choose this rather than being silent or being afraid eni ne ennode normal samsarikille, will u not love me like before and other worst scenarios!!!!<br><br>so please be NORMAL pleaseeeee... please forgive this overdramatic idiot your AMUL BABY pleaseeee";
             }
 
             var messageBox = document.getElementById("message");
@@ -171,7 +100,6 @@ But even if this looks dramatic or silly, what I’m saying is real.... ";
             }, 100);
         }
 
-        // Create floating hearts
         function createHeart() {
             var heart = document.createElement("div");
             heart.classList.add("heart");
@@ -192,4 +120,3 @@ But even if this looks dramatic or silly, what I’m saying is real.... ";
 
 </body>
 </html>
-
