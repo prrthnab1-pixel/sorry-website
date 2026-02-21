@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I Owe You an Apology 🤍</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #ffe6f0;
+            padding: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #message {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #333;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Click the reason 🤍</h1>
+
+    <button onclick="showMessage(1)">intro</button>
+    <button onclick="showMessage(2)">disclaimer</button>
+    <button onclick="showMessage(3)">epilogue</button>
+
+    <div id="message"></div>
+
+    <script>
+        function showMessage(option) {
+            var text = "";
+
+            if(option == 1) {
+                text = "HEHE!!!!!! I hope u know wht this for.... I behaved like that not because you deserved it, Not because you did anything wrong!!!
+But because I let my mood swings run the show, period hits hard  u know!!!";
+            }
+            else if(option == 2) {
+                text = "I know you probably won’t take this seriously…
+and maybe I deserve that.
+But even if this looks dramatic or silly, what I’m saying is real.... ";
+            }
+            else if(option == 3) {
+                text = "arinjo ariyathaeyoo i dont want any stains in our bondss... i know this sounds or dramatic but i would choose this rather than being silent or being afraid eni ne ennode normal samsarikille, will u not love me like before and other worst scenarios!!!! so please be NORMAL pleaseeeee... please forgive this overdramatic idiot your AMUL BABY pleaseeee";
+            }
+
+            document.getElementById("message").innerHTML = text;
+        }
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I Owe You an Apology 🤍</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+            padding: 50px;
+            overflow: hidden;
+        }
+
+        h1 {
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #ff99cc; }
+            to { text-shadow: 0 0 20px #ff4da6; }
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 15px;
+            font-size: 16px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            background-color: #ff80bf;
+            color: white;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #ff4da6;
+        }
+
+        #message {
+            margin-top: 40px;
+            font-size: 18px;
+            color: #333;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .show {
+            opacity: 1;
+        }
+
+        /* Floating hearts */
+        .heart {
+            position: absolute;
+            color: #ff4da6;
+            font-size: 20px;
+            animation: float 6s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(100vh); opacity: 1; }
+            100% { transform: translateY(-10vh); opacity: 0; }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Click the reason 🤍</h1>
+
+    <button onclick="showMessage(1)">keri varu chechiyee</button>
+    <button onclick="showMessage(2)">I'm kindoff over</button>
+    <button onclick="showMessage(3)">ur Amul Baby luvs u</button>
+
+    <div id="message"></div>
+
+    <script>
+        function showMessage(option) {
+            var text = "";
+
+            if(option == 1) {
+                text = "HEHE!!!!!! I hope u know wht this for.... I behaved like that not because you deserved it, Not because you did anything wrong!!!
+But because I let my mood swings run the show, period hits hard  u know!!!";
+            }
+            else if(option == 2) {
+                text = "I know you probably won’t take this seriously…
+and maybe I deserve that.
+But even if this looks dramatic or silly, what I’m saying is real.... ";
+            }
+            else if(option == 3) {
+                text = "arinjo ariyathaeyoo i dont want any stains in our bondss... i know this sounds dramatic but i would choose this rather than being silent or being afraid eni ne ennode normal samsarikille, will u not love me like before and other worst scenarios!!!! so please be NORMAL pleaseeeee... please forgive this overdramatic idiot your AMUL BABY pleaseeee";
+            }
+
+            var messageBox = document.getElementById("message");
+            messageBox.classList.remove("show");
+            messageBox.innerHTML = text;
+
+            setTimeout(function() {
+                messageBox.classList.add("show");
+            }, 100);
+        }
+
+        // Create floating hearts
+        function createHeart() {
+            var heart = document.createElement("div");
+            heart.classList.add("heart");
+            heart.innerHTML = "❤";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = Math.random() * 20 + 10 + "px";
+            heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+
+            document.body.appendChild(heart);
+
+            setTimeout(function() {
+                heart.remove();
+            }, 6000);
+        }
+
+        setInterval(createHeart, 500);
+    </script>
+
+</body>
+</html>
